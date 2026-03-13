@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jack Toresal and The Secret Letter</title>
+    <meta name="description" content="A richly illustrated interactive fiction game set in the medieval town of Toresal. Play in your browser or download for Windows, macOS, and Linux." />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Lora', Georgia, serif;
+            background: #1a1408;
+            color: #edd8c2;
+            min-height: 100vh;
+        }
+
+        /* Hero */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1.5rem 2rem;
+            background:
+                linear-gradient(to bottom, rgba(26,20,8,0) 60%, #1a1408 100%),
+                url('images/TitlePage.jpg') center top / cover no-repeat;
+            min-height: 480px;
+            justify-content: flex-end;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            color: #d4a843;
+            text-align: center;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .subtitle {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #c4b89a;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .play-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: #8c7052;
+            color: #fff;
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s;
+            border: 2px solid #d4a843;
+        }
+
+        .play-btn:hover {
+            background: #a8875e;
+        }
+
+        /* Content sections */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            color: #d4a843;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #3d2e1a;
+            padding-bottom: 0.5rem;
+        }
+
+        .section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #cbbfa8;
+        }
+
+        /* Screenshot */
+        .screenshot-wrap {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .screenshot-wrap img {
+            max-width: 100%;
+            border: 3px solid #3d2e1a;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        /* Downloads grid */
+        .downloads {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .download-card {
+            background: #2a1f10;
+            border: 1px solid #3d2e1a;
+            border-radius: 6px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: border-color 0.2s;
+        }
+
+        .download-card:hover {
+            border-color: #8c7052;
+        }
+
+        .download-card .os {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            color: #d4a843;
+            margin-bottom: 0.3rem;
+        }
+
+        .download-card .detail {
+            font-size: 0.85rem;
+            color: #8a7d6a;
+            margin-bottom: 1rem;
+        }
+
+        .download-card a {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: #8c7052;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .download-card a:hover {
+            background: #a8875e;
+        }
+
+        .download-card a.coming-soon {
+            background: #3d2e1a;
+            color: #8a7d6a;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        /* Book cover + about layout */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .about-grid img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+        }
+
+        @media (max-width: 600px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-grid img {
+                max-width: 200px;
+                margin: 0 auto;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            color: #5a4d3a;
+            font-size: 0.85rem;
+            border-top: 1px solid #2a1f10;
+        }
+
+        footer a {
+            color: #8c7052;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Jack Toresal and The Secret Letter</h1>
+        <p class="subtitle">A Textfyre Interactive Fiction Game</p>
+        <a href="play/" class="play-btn">Play in Browser</a>
+    </div>
+
+    <div class="content">
+
+        <div class="section">
+            <div class="about-grid">
+                <img src="images/BookCover.jpg" alt="Book cover" />
+                <div>
+                    <h2>About the Game</h2>
+                    <p>
+                        Jack Toresal is a street orphan living by his wits in the medieval town of Toresal.
+                        When a dying stranger entrusts him with a mysterious letter, Jack is drawn into a
+                        web of intrigue involving nobles, spies, and a secret that could change the kingdom forever.
+                    </p>
+                    <p>
+                        Originally released in 2009 by Textfyre, this richly illustrated interactive fiction
+                        game has been lovingly restored for modern browsers and desktop platforms using
+                        OpenSilver and Tauri.
+                    </p>
+                    <p>
+                        Story by David Cornelson. Written by Michael Gentry.
+                        Sketches by Erika Swanson.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Screenshot</h2>
+            <div class="screenshot-wrap">
+                <a href="play/">
+                    <img src="images/screenshot.png" alt="Screenshot of the game running in a browser" />
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Downloads</h2>
+            <p>Desktop versions run natively with no browser required.</p>
+            <div class="downloads">
+                <div class="download-card">
+                    <div class="os">Windows</div>
+                    <div class="detail">.msi installer</div>
+                    <a href="downloads/SecretLetter_1.8.0_x64-setup.msi" class="coming-soon">Coming Soon</a>
+                </div>
+                <div class="download-card">
+                    <div class="os">macOS</div>
+                    <div class="detail">.dmg disk image</div>
+                    <a href="downloads/SecretLetter_1.8.0_x64.dmg" class="coming-soon">Coming Soon</a>
+                </div>
+                <div class="download-card">
+                    <div class="os">Ubuntu / Debian</div>
+                    <div class="detail">.deb package</div>
+                    <a href="downloads/secret-letter_1.8.0_amd64.deb" class="coming-soon">Coming Soon</a>
+                </div>
+                <div class="download-card">
+                    <div class="os">Linux</div>
+                    <div class="detail">AppImage (universal)</div>
+                    <a href="downloads/SecretLetter_1.8.0_amd64.AppImage" class="coming-soon">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Copyright &copy; 2026 David Cornelson.
+        <a href="https://github.com/ChicagoDave/SecretLetter2026">Source on GitHub</a>.
+    </footer>
+
+</body>
+</html>
