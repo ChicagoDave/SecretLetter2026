@@ -3,6 +3,7 @@ const path = require("path");
 
 const candidates = [
   path.resolve(__dirname, "../publish/wwwroot"),
+  path.resolve(__dirname, "../SecretLetter.Browser/bin/Release/net8.0/publish/wwwroot"),
   path.resolve(__dirname, "../SecretLetter.Browser/bin/Release/net8.0/browser-wasm/publish/wwwroot"),
 ];
 const src = candidates.find((p) => fs.existsSync(p));
