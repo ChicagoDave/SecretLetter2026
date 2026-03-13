@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 
-const src = path.resolve(
-  __dirname,
-  "../SecretLetter.Browser/bin/Release/net8.0/browser-wasm/publish/wwwroot"
-);
+const candidates = [
+  path.resolve(__dirname, "../publish/wwwroot"),
+  path.resolve(__dirname, "../SecretLetter.Browser/bin/Release/net8.0/browser-wasm/publish/wwwroot"),
+];
+const src = candidates.find((p) => fs.existsSync(p));
 const dest = path.resolve(__dirname, "dist");
 
 function copyRecursive(source, target) {
