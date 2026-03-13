@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Textfyre.UI</RootNamespace>
+    <AssemblyName>Textfyre.UI</AssemblyName>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <DefineSilverlight>true</DefineSilverlight>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="3.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Textfyre.VM\Textfyre.VM.csproj" />
+  </ItemGroup>
+
+  <!-- Auto-include all .cs files except legacy/unwanted -->
+  <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="Properties\AssemblyInfo.cs;Service References\**\*.cs;obj\**\*.cs;bin\**\*.cs" />
+  </ItemGroup>
+
+  <!-- XAML pages -->
+  <ItemGroup>
+    <Page Include="**\*.xaml" Exclude="obj\**\*.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <!-- Embedded resources -->
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

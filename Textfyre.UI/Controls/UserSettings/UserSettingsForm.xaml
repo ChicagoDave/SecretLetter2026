@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="Textfyre.UI.Controls.UserSettings.UserSettingsForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ctrl="clr-namespace:Textfyre.UI.Controls.UserSettings"
+    >
+    <Grid Background="#99EDD8C2">
+
+        <Grid x:Name="LayoutRoot" Width="640" Height="520" Background="#FFEDD8C2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Column="0" Grid.Row="0" Background="#FFDFC4A7" x:Name="TopTitleContent">
+                <TextBlock Text="Settings" x:Name="DialogTitle" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8,0,0,0" />
+            </Grid>
+
+
+            <Border Grid.Column="0" Grid.Row="1" BorderBrush="#FF8C7052" BorderThickness="2" >
+                <Grid x:Name="ListFilesContent">
+                    <StackPanel Margin="10,10,10,10">
+                        <ctrl:FontPicker x:Name="FPHeadline" FontTitle="Headline" />
+                        <ctrl:FontPicker x:Name="FPText" FontTitle="Text" />
+                        <ctrl:FontPicker x:Name="FPInput" FontTitle="Input" />
+                        <ctrl:FontPicker x:Name="FPHeader" FontTitle="Header" />
+                        <ctrl:FontPicker x:Name="FPFooter" FontTitle="Footer" />
+                        <ctrl:FontPicker x:Name="FPConversation" FontTitle="Conversation" />
+                        <StackPanel Orientation="Horizontal">
+                            <ctrl:FontsPreview x:Name="FPPreview" Margin="0,20,0,20" />
+                            <StackPanel Margin="0,20,20,20">
+                                <TextBlock Text="Background Color" />
+                                <ctrl:ColorPickerButton x:Name="CpbBgColor" SelectedBrush="#00FFFFFF" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <ctrl:ColorPicker x:Name="ColorPickerPopup" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+
+            <Grid Grid.Column="0" Grid.Row="2" x:Name="ButtonGrid">
+                <Button IsEnabled="True" x:Name="BtnClose" Content="Cancel" Click="BtnClose_Click" Style="{StaticResource DialogButtonStyle}" Width="100" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="8,0,8,0" />
+                <Button IsEnabled="True" x:Name="BtnReset" Content="Clear Settings" Click="BtnReset_Click"  Style="{StaticResource DialogButtonStyle}" Width="200" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="8,0,218,0" />
+                <Button IsEnabled="True" x:Name="BtnOK" Content="Save Settings and Restart" Click="BtnOK_Click"  Style="{StaticResource DialogButtonStyle}" Width="200" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="8,0,8,0" />
+            </Grid>
+
+
+            <Border Grid.ColumnSpan="1" Grid.RowSpan="4" Grid.Column="0" Grid.Row="0" BorderBrush="#FF8C7052" BorderThickness="2" x:Name="GridBorder">
+                <Grid/>
+            </Border>
+
+        </Grid>
+    </Grid>
+
+</UserControl>

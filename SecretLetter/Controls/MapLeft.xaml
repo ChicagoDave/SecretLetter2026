@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="SecretLetter.Controls.MapLeft"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:tfctrl="clr-namespace:Textfyre.UI.Controls;assembly=Textfyre.UI"
+    >
+    <Grid x:Name="LayoutRoot">
+            <tfctrl:Art x:Name="mapArt" HorizontalAlignment="Left" VerticalAlignment="Top" />
+    </Grid>
+</UserControl>

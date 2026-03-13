@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<help>
+  <menu title="Instructions">
+    <item title="Introduction to Secret Letter">
+      <paragraph>[italic type]Jack Toresal and The Secret Letter[roman type] takes place in the northern town of Toresal on the island continent of Miradania. Jack, an orphan since birth, is fourteen years old and is suddenly drawn into a life or death adventure.</paragraph>
+      <paragraph>This story, or game, is called Interactive Fiction. Since Jack is the main character in this story, you control Jack's every move and every decision. You get to decide how the story unfolds.</paragraph>
+      <paragraph>Interactive Fiction consists of a setting or map, scenery, and items of interest. You can tell Jack to move around the setting by using compass rose directions like NORTH, SOUTHEAST, UP, or IN. The eight main directions can be abbreviated to N, NE, E, SE, S, SW, W, NW. You can also open, push, pull, close, and throw things.</paragraph>
+      <paragraph>How do you do all of these things? Well unlike any other game, Secret Letter will let you type in your commands from the keyboard and that is how you tell Jack what to do next.</paragraph>
+      <paragraph>If you get stuck, you can head to the Table of Contents and click [italic type]Get Hints[roman type].</paragraph>
+      <paragraph>When you run into other characters, they may try to talk to you. If this happens, a list of conversation topics will appear and you can click these in any order. If you want to initiate a conversation, type TALK TO character.</paragraph>
+      <paragraph>Finally, you may not like the ending you get first time round. To avoid having to play all the way through again from the beginning to find a better ending, you may want to save at fairly regular intervals. You can either type SAVE, or head to the Table of Contents and click [italic type]Save The Current Game[roman type].</paragraph>
+    </item>
+    <item title="Instructions for Play">
+      <menu title="Instructions for Play">
+        <item title="About Interactive Fiction">
+          <paragraph>The game you are playing is a work of Interactive Fiction.  In interactive fiction you play the main character of a story.  You type commands which determine the actions of the character and the flow of the plot.  Some IF games include graphics, but most do not: the imagery is provided courtesy of your imagination.  On the other hand, there's a wide range of action available: whereas in other games you may be restricted to shooting, movement, or searching items you can click on with a mouse, IF allows you a wide range of verbs.</paragraph>
+        </item>
+        <item title="What to do with &gt;">
+          <paragraph>The &gt; sign is where the game says, "Okay, what do you want to do now?"  You may respond by typing an instruction -- usually an imperative verb, possibly followed by prepositions and objects.  So, for instance, LOOK, LOOK AT FISH, TAKE FISH.</paragraph>
+        </item>
+        <item title="Getting Started">
+          <paragraph>The first thing you want to do when starting a game is acquaint yourself with your surroundings and get a sense of your goal. To this end, you should read the introductory text carefully. Sometimes it contains clues. You will also want to look at the room you are in. Notice where the exits from the room are, and what objects are described here. If any of these seem interesting, you may want to EXAMINE them.</paragraph>
+          <paragraph>You might also want to examine yourself (EXAMINE ME) to see whether the author has left you any clues about your character. TAKE INVENTORY will tell you what you're carrying, as well.</paragraph>
+          <paragraph>Once you've gotten your bearings, you may want to explore. Move from room to room, and check out every location available.</paragraph>
+        </item>
+        <item title="Rooms and Travel">
+          <paragraph>At any given time, you are in a specific location, or room. When you go into a room, the game will print a description of what you can see there. This description will contain two vital kinds of information: things in the room you can interact with or take, and a list of exits, or ways out. If you want to see the description again, you may just type LOOK.</paragraph>
+          <paragraph>When you want to leave a location and go to another one, you may communicate this to the game using compass directions: eg, GO NORTH. For simplicity's sake, you are allowed to omit the word GO, and to abbreviate the compass directions. So you may use NORTH, SOUTH, EAST, WEST, NORTHEAST, SOUTHEAST, NORTHWEST, SOUTHWEST, UP, and DOWN, or in short form N, S, E, W, NE, SE, NW, SW, U, and D.</paragraph>
+          <paragraph>In some locations, IN and OUT will also be useful.</paragraph>
+        </item>
+        <item title="Objects">
+          <paragraph>Throughout the game there will be assorted objects that you can do things with. Most importantly, you may TAKE or GET items, and (when you are tired of them) DROP them again. INVENTORY (abbreviated I) will list the items you are currently holding.</paragraph>
+          <paragraph>There are usually assorted things you may do with these objects. OPEN, CLOSE, WEAR, EAT, LOCK, and UNLOCK are especially common.</paragraph>
+          <paragraph>Occasionally, you will find that the game does not recognize the name of an object even though it has been described as being in the room with you. If this is the case, the object is just there for scenery, and you may assume that you do not need to interact with it.</paragraph>
+        </item>
+        <item title="Features">
+          <paragraph>Word Definitions: You can hold the Ctrl key down and this will change the color of words that have definitions. If you click on these words, you will see a popup balloon. Try it.</paragraph>
+        </item>
+        <item title="Controlling the Game">
+          <paragraph>
+            There are a few simple commands for controlling the game itself. These are:[linebreak]
+            [indent]
+            SAVE saves a snapshot of the game as it is now.[linebreak]
+            [indent]
+            RESTORE puts the game back to a previous saved state. You may keep as many saved games as you like.[linebreak]
+            [indent]
+            RESTART puts the game back to the way it was at the beginning.[linebreak]
+            [indent]QUIT ends the game.
+          </paragraph>
+        </item>
+        <item title="How the World is Assembled">
+          <menu title="How the World is Assembled">
+            <item title="Space">
+              <paragraph>Most IF games are set in a world made up of rooms without internal division. Movement between rooms is possible; movement within a room does not always amount to anything. >WALK OVER TO THE DESK is rarely a useful sort of command. On the other hand, if something is described as being high or out of reach, it is sometimes relevant to stand on an object to increase your height. This kind of activity tends to be important only if prompted by the game text.</paragraph>
+            </item>
+            <item title="Containment">
+              <paragraph>One thing that IF does tend to model thoroughly is containment. Is something in or on something else? The game keeps track of this, and many puzzles have to do with where things are -- in the player's possession, lying on the floor of the room, on a table, in a box, etc.</paragraph>
+            </item>
+            <item title="Types of Action">
+              <paragraph>Most of the actions you can perform in the world of IF are brief and specific. &gt;WALK WEST or &gt;OPEN DOOR are likely to be provided. &gt;TAKE A JOURNEY or &gt;BUILD A TABLE are not. Things like &gt;GO TO THE HOTEL are on the borderline: some games allow them, but most do not. In general, abstract, multi-stage behavior usually has to be broken down in order for the game to understand it.</paragraph>
+            </item>
+            <item title="Other Characters">
+              <paragraph>Other characters in IF games are sometimes rather limited. On the other hand, there are also games in which character interaction is the main point of the game. You should be able to get a feel early on for the characters -- if they seem to respond to a lot of questions, remember what they're told, move around on their own, etc., then they may be fairly important. If they have a lot of stock responses and don't seem to have been the game designer's main concern, then they are most likely present either as local color or to provide the solution to a specific puzzle or set of puzzles. Characters in very puzzle-oriented games often have to be bribed, threatened, or cajoled into doing something that the player cannot do -- giving up a piece of information or an object, reaching something high, allowing the player into a restricted area, and so on.</paragraph>
+            </item>
+          </menu>
+        </item>
+        <item title="If You Get Stuck">
+          <menu title="if You Get Stuck">
+            <item title="Explore">
+              <paragraph>Examine every object and look at everything in your inventory. Open all the doors you can find, and go through them. Look inside all closed containers. Make sure you've exhausted all the options in your environment.</paragraph>
+              <paragraph>Try out all your senses. If the game mentions texture, odor, or sound, try touching, smelling, listening to, or tasting objects.</paragraph>
+              <paragraph>Be thorough. If you still can't figure out what to do, try opening windows, looking under beds, etc. Sometimes objects are well-hidden.</paragraph>
+            </item>
+            <item title="Read carefully">
+              <paragraph>Reread. Look back at things you've already looked at. Sometimes this will trigger an idea you hadn't thought of.</paragraph>
+              <paragraph>Take hints from the prose of the game. Things that are described in great detail are probably more important than things that are given one-liners. Play with those objects. If a machine is described as having component parts, look at the parts, and try manipulating them.  Likewise, notice the verbs that the game itself uses. Try using those yourself. Games often include special verbs -- the names of magic spells, or other special commands. There's no harm in attempting something if the game mentions it.</paragraph>
+              <paragraph>Check the whole screen. Are there extra windows besides the main window?  What's going on in those?  Check out the status bar, if there is one -- it may contain the name of the room you're in, your score, the time of day, your character's state of health, or some other important information.  If there's something up there, it's worth paying attention to that, too.  When and where does it change?  Why is it significant?  If the bar is describing your character's health, you can bet there is probably a point at which that will be important.</paragraph>
+            </item>
+            <item title="Be creative">
+              <paragraph>Rephrase. If there's something you want to do, but the game doesn't seem to understand you, try alternative wordings.</paragraph>
+              <paragraph>Try variations. Sometimes an action doesn't work, but does produce some kind of unusual result. These are often indications that you're on the right track, even if you haven't figured out quite the right approach yet. Pressing the red button alone may only cause a grinding noise from inside the wall, so perhaps pressing the blue and then the red will open the secret door.</paragraph>
+              <paragraph>Consider the genre of the game. Mysteries, romances, and thrillers all have their own types of action and motivation. What are you trying to do, and how do conventional characters go about doing that? What's the right sort of behavior for a detective/romance heroine/spy?</paragraph>
+            </item>
+            <item title="Cooperate">
+              <paragraph>Play with someone else. Two heads are often better than one. If that doesn't work, try emailing the author or (better yet) posting a request for hints on the newsgroup rec.games.int-fiction.  For best results, put the name of the game you want help with in the subject line; then leave a page or so of blank spoiler space (so that no one will read about where you got to in the game unless they've already played it), and describe your problem as clearly as possible.  Someone will probably be able to tell you how to get around it.</paragraph>
+            </item>
+            <item title="Get Hints">
+              <paragraph>If you really don't know what to do, click on the Table of Contents and click [italic type]Get Hints[roman type] and you will be given a list of things to help you through your predicament.</paragraph>
+            </item>
+            <item title="Textfyre Forums">
+              <paragraph><![CDATA[If you're still stuck, post a question on our forums at http://forums.textfyre.com.]]></paragraph>
+            </item>
+          </menu>
+        </item>
+      </menu>
+    </item>
+    <item title="Credits">
+      <paragraph>Jack Toresal and The Secret Letter by Mike Gentry and David Cornelson.</paragraph>
+      <paragraph>Inform 7 by Graham Nelson, with several useful extensions by Emily Short.</paragraph>
+      <paragraph>System programming by Tara McGrew.</paragraph>
+      <paragraph>Game programming by David Cornelson.</paragraph>
+      <paragraph>Beta-testing by: Jacqueline Ashwell, Eric Eve, Peter Berman, Jim Aikin, and Paul O'Brian.</paragraph>
+      <paragraph>The opening Grubber's Market puzzle was co-designed by Gabby Cornelson.</paragraph>
+      <paragraph>The map is by Jennifer Montes.</paragraph>
+      <paragraph>The book cover and background are from IStockPhoto.Com</paragraph>
+      <paragraph>The drawings are by Erika Swanson of simplyerika.com</paragraph>
+      <paragraph>A special thanks goes out to Graham Nelson and Emily Short, without whom Textfyre would not have existed. Their dedication to Interactive Fiction and to the Inform 7 development tools is simply astounding. We're grateful for their many contributions.</paragraph>
+      <paragraph>We also want to thank J. Robinson Wheeler and everyone in the Interactive Fiction hobbyist community for their suppport.</paragraph>
+      <paragraph>Justin de Vesine, Purveyor of Fine Apples</paragraph>
+      <paragraph>Gunther Schmidl, Isolated Exception</paragraph>
+      <paragraph>Marius Muller, Futile Attempts Coordinator</paragraph>
+      <paragraph>Jose Borges, Anxious IFReviewer</paragraph>
+      <paragraph>Nate Cull, Licensed Professional Gawker</paragraph>
+      <paragraph>Adam Atkinson, Importer of Sardinian Cheeses</paragraph>
+      <paragraph>David Given, Hazardous Foodstuff Evaluator</paragraph>
+      <paragraph>Mark Musante, Fine Consumer of Apples</paragraph>
+      <paragraph>David Welbourn, Junior Protocol Officer</paragraph>
+      <paragraph>Roger Carbol, Amoral Support</paragraph>
+      <paragraph>Sarah Morayati, Apple Volatility Engineer</paragraph>
+    </item>
+    <item title="Updates">
+      <paragraph>1.01  - Added ifMUD credits and tried to resolve images issues.</paragraph>
+      <paragraph>1.02  - Images broken, one pass at fixing failed.</paragraph>
+      <paragraph>1.03  - Images issues are resolved. Fixed 'romain' typo.</paragraph>
+      <paragraph>1.04  - Save is compressed and speedier. Unresolved memory leak effects Mac users. Unresolved Font issue on Mac.</paragraph>
+      <paragraph>1.05  - Resolved Font issue on Mac. Fixed some minor game play issues. Unresolved memory leak effects Mac users.</paragraph>
+      <paragraph>1.06  - 7-Jul-2009: Resolved keyboard memory leak by removing Goudy Font. Added Settings page to adjust colors and fonts. Fixed missing Chapter 10 heading. Fixed quotes getting wrapped.</paragraph>
+      <paragraph>1.07  - 14-Jul-2009: Fixed all of Alan De Smet's bugs and a few others.</paragraph>
+      <paragraph>1.07  - 16-Jul-2009: Facebook Demo.</paragraph>
+    </item>
+  </menu>
+</help>

@@ -1,0 +1,43 @@
+# .NET / OpenSilver
+bin/
+obj/
+publish/
+*.user
+*.suo
+*.userosscache
+*.sln.docuser
+.vs/
+
+# NuGet
+packages/
+*.nupkg
+
+# Tauri / Rust
+SecretLetter.Desktop/src-tauri/target/
+SecretLetter.Desktop/dist/
+SecretLetter.Desktop/node_modules/
+
+# Node
+node_modules/
+package-lock.json
+
+# Claude Code
+.claude/
+
+# Archives
+*.tar
+*.tar.gz
+*.zip
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+logs/
+
+# Temp
+*.tmp
+*.bak
+*.swp

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Textfyre.VM</RootNamespace>
+    <AssemblyName>Textfyre.VM</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="3.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties/AssemblyInfo.cs" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+{
+  "name": "secretletter-desktop",
+  "version": "1.8.0",
+  "private": true,
+  "scripts": {
+    "tauri": "tauri",
+    "copy-dist": "node copy-dist.js",
+    "build": "npm run copy-dist && tauri build",
+    "dev": "npm run copy-dist && tauri dev"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
